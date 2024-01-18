@@ -9,4 +9,5 @@ echo ucfirst($Name) ."<br>" ;
 echo ucwords($Name) ."<br>" ;
 $var3 = " IAM GRADUATE OF THE FACULTY OF COMMERC";
 echo strtolower($var3) ."<br>";
+
 ?>

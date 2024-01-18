@@ -13,7 +13,6 @@ echo"<br>";
 $name = "Ali";
 echo str_replace("EMAN", $name , $var);
 
-
 /*this section
 about <Numbers*/
 
