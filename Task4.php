@@ -33,7 +33,7 @@ echo $b ."<br>";
 echo "<br>"."......................."."<br>" ;
 
 //Q4
-$num = 7;
+$num = 9;
  
 if (is_numeric($num)) {
     if ($num > 0) {
