@@ -9,7 +9,7 @@ $length = 5;
 $width = 3;
 $area = rectangle_area($length,$width);
 echo "The area of the rectangle is: " . $area; "<br>";
-echo "<br>";
+echo "<br>......................<br>";
 
 
 //Q2
@@ -32,8 +32,10 @@ echo "<br>";
 <body>
 
 <div class="container">
-  <h2>Striped Rows</h2>
-  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <h2>The following table shows the fruit for each student
+</h2>
+  <p>The first row indicates the names of the students and the second row indicates the favorite fruit
+:</p>            
   <table class="table table-striped">
     <thead>
       <tr>
