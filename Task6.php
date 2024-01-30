@@ -32,7 +32,7 @@ echo "<br>......................<br>";
 <body>
 
 <div class="container">
-  <h2>The following table shows the fruit for each student
+  <h2>The following table shows TheFavourite food for each student
 </h2>
   <p>The first row indicates the names of the students and the second row indicates the favorite fruit
 :</p>            
