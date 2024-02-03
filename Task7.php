@@ -10,7 +10,8 @@
 <body>
 <div class="container" style="padding: 5px">
   <p></p>
-  <h3>submit your information</h3>
+  <h3> Please enter your personal information here
+</h3>
   <!-- you can change the action attribute with the path of a file in the server where you want to send the data 
   or the link for example http://localhost:8080/example if the form is outside server -->
   <form action="/Backend-R9-Tasks/task-7-php-arrays/submit.php" method="POST">

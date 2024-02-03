@@ -6,5 +6,6 @@
         $email = $_POST['email'];
         $data = "name:$name <br> email: $email ";  
     }
-    echo "Your input was received  <br>" . $data;
+    echo "Your personal information has been accepted
+    <br>" . $data;
 ?>
