@@ -10,6 +10,6 @@ unset($_SESSION['pw']);
 //$_SESSION=array();
 
 //session_destroy ();
-$expir = time () + (86400*30);
-setcookie('user', $_COOKIE ['user'], $expir, "/");
-echo"you'r Logged Out";
+$expir = time() + (86400*30);
+setcookie('asmaa', $_COOKIE ['asmaa'], $expir, "/");
+echo "you'r Logged Out";
