@@ -1,21 +1,17 @@
 <?php
-include('./PDO.PHP');
-if (isset($_POST['Add'])){
-    $name = $_POST['cust_name'];
-    $email = $_POST['email'];
-    $pw = $_POST['pwd'];
-    if (!empty($name) && !empty($email) && !empty($pw) ){
-        $SQL = "INSERT INTO customers(Name,email,password) 
-        VALUES('$name' , '$email' ,'$pw')";
-        
-        $conn->exec($SQL);
-        
-        echo"DATA Insert Successfully";
-        
-    }
-}
 
+include('./PDO.PHP');
+
+$query = "UPDATE customers
+SET Name= 'AHMAD shhab', email='AAA@gmail.com', gender= 'mala'
+WHERE cust_id ='4' ";
+$stmt =$conn->prepare($query);
+
+$stmt->execute();
+echo $stmt->rowcount() . "records UPDATE SUCCESSFULLY";
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,10 +40,18 @@ if (isset($_POST['Add'])){
       <label for="pwd">Password:</label>
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
+    <div class="form-check">
+    <label >Gender:</label>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio1" name="Gender"  value="mala"checked>
+      <label class="form-check-label" for="radio1">Mala</label>
     </div>
-    <button type="submit" class="btn btn-default" name="Add">Add</button>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio2" name="Gender" value="Famel">
+      <label class="form-check-label" for="radio2">Famel</label>
+    </div>
+   
+    <button type="submit" class="btn btn-default" name="Add">UP DATE CUSTMER</button>
   </form>
 </div>
 
