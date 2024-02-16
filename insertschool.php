@@ -1,11 +1,11 @@
 <?php
-include('./PDO.PHP');
+include('./SCHOOL.PHP');
 if (isset($_POST['Add'])){
-    $name = $_POST['cust_name'];
+        $name = $_POST['STU_name'];
     $email = $_POST['email'];
     $pw = $_POST['pwd'];
     if (!empty($name) && !empty($email) && !empty($pw) ){
-        $SQL = "INSERT INTO customers(Name,email,password) 
+        $SQL = "INSERT INTO student(name,email,password) 
         VALUES('$name' , '$email' ,'$pw')";
         
         $conn->exec($SQL);
@@ -30,11 +30,11 @@ if (isset($_POST['Add'])){
 <body>
 
 <div class="container">
-  <h2>Add new custam</h2>
+  <h2>Add NEW Studant</h2>
   <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
   <div class="form-group">
-      <label for="cust_name">name:</label>
-      <input type="name" class="form-control" id="cust_name" placeholder="Enter email" name="cust_name">
+      <label for="STU_name">name:</label>
+      <input type="name" class="form-control" id="STU_name" placeholder="Enter email" name="STU_name">
     </div>
     <div class="form-group">
       <label for="email">Email:</label>
@@ -47,7 +47,7 @@ if (isset($_POST['Add'])){
     <div class="checkbox">
       <label><input type="checkbox" name="remember"> Remember me</label>
     </div>
-    <button type="submit" class="btn btn-default" name="Add">Add</button>
+    <button type="submit" class="btn btn-default" name="Add">Add NEW Studant</button>
   </form>
 </div>
 
