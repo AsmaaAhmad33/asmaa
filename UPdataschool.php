@@ -3,7 +3,7 @@
 include('./SCHOOL.PHP');
 
 $query = "UPDATE student
-SET Name= 'AHMAD shhab', email='AAA@gmail.com', password= 'mala'
+SET Name= 'AHMAD shhab', email='AAA@gmail.com', password= '01202424'
 WHERE Concat info ='33' ";
 $stmt =$conn->prepare($query);
 
