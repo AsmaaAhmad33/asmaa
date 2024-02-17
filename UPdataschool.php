@@ -1,10 +1,10 @@
 <?php
 
-include('./PDO.PHP');
+include('./SCHOOL.PHP');
 
-$query = "UPDATE customers
-SET Name= 'AHMAD shhab', email='AAA@gmail.com', gender= 'mala'
-WHERE cust_id ='33' ";
+$query = "UPDATE student
+SET Name= 'AHMAD shhab', email='AAA@gmail.com', password= 'mala'
+WHERE Concat info ='33' ";
 $stmt =$conn->prepare($query);
 
 $stmt->execute();
@@ -29,8 +29,8 @@ echo $stmt->rowcount() . "records UPDATE SUCCESSFULLY";
   <h2>Add new studant</h2>
   <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
   <div class="form-group">
-      <label for="cust_name">name:</label>
-      <input type="name" class="form-control" id="cust_name" placeholder="Enter email" name="cust_name">
+  <label for="STU_name">name:</label>
+  <input type="name" class="form-control" id="STU_name" placeholder="Enter email" name="STU_name">
     </div>
     <div class="form-group">
       <label for="email">Email:</label>
